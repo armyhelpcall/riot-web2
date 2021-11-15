@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <title>web1-html</title>
+  <meta charset="utf-8">
+  <style>
+    body{
+      margin:0;
+    }
+
+
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    #grid ol{
+      border-right: 1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+      padding-left:40px;
+    }
+    #grid{
+      display:grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #article{
+      padding-left:50px;
+      }
+      @media(max-width:700px){
+          #grid ol{
+            border-right:none;
+          }
+          #grid{
+            display: block;
+          }
+          #article img{
+            display:none;
+          }
+          h1{
+            border-bottom: none;
+          }
+    }
+  </style>
+</head>
+
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html" >html</a></li>
+      <li><a href="2.html"  >css</a></li>
+      <li><a href="3.html">js</a></li>
+    </ol>
+    <div id="article">
+      <h2>CSS</h2>
+      <p><a href="https://www.riotgames.com/ko" target="_blank">Riot Games</a>,
+         Inc. is an American video game developer, publisher and esports
+      tournament organizer. Its headquarters are in West Los Angeles,
+      California.</p>
+      <img src="riot.jpg" width="450">
+      <p style="margin-top:40px;">Founded in September 2006 by Brandon Beck
+      and Marc Merrill to develop League of Legends, the company has gone on to
+       develop several spin-off games of League
+      and an unrelated first-person shooter, Valorant. As a publisher,
+      Riot Games oversees the production of League spin-offs by other developers
+       through its publishing arm, Riot Forge. Since 2011, Riot has been a
+       subsidiary of Chinese
+      conglomerate Tencent.</p>
+    </div>
+  </div>
+</body>
+</html>
